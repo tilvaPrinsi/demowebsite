@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://htmldemo.net/pisces/pisces/assets/css/vendor.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="demo2.css">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+
+
+<div class="img">
+    <img style="float:left;padding-left: 40px;padding-top: 20px;" id="logo" src="logo-dark.webp" rel="logo">
+</div>
+
+<div class="topnav" id="myTopnav">
+    <div class="dropdown">
+        <!--            <div class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-blue">-->
+        <button class="dropbtn" style="color:blue;" id="home">Home
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Home 1</a>
+            <a href="#">Home 2</a>
+            <!--           </div>-->
+        </div>
+    </div>
+
+    <!--        <div class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-blue">-->
+    <a href="#about">About</a>
+    <!--        </div>-->
+
+
+    <div class="dropdown">
+        <!--            <div class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-blue">-->
+        <button class="dropbtn">Services
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Services 1</a>
+            <a href="#">Services 2</a>
+            <!--             </div>-->
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <!--              <div class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-blue">-->
+        <button class="dropbtn">Protfolio
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Protfolio 1</a>
+            <a href="#">Protfolio 2</a>
+            <a href="#">Protfolio Details</a>
+            <!--                </div>-->
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <!--              <div class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-blue">-->
+        <button class="dropbtn">Blog
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Blog </a>
+            <a href="#">Blog slider</a>
+            <a href="#">Blog details</a>
+            <!--                </div>-->
+        </div>
+    </div>
+    <a href="#about">contact</a>
+
+
+    <!-- <a href="#about">About</a> -->
+    <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+    <div id="sidemenuright">
+        <i class="fa fa-search" style="float: right;margin-right: 10px;font-size:large;margin-top: 15px;"></i>
+        <button style="margin-right:20px; float:right;color:rgb(10, 10, 10);border: white;background-color: white;font-size:x-large;margin-top: 12px;"
+                class=" w3-right" onclick="openRightMenu()">☰
+        </button>
+    </div>
+
+
+</div>
+
+<div class="row" style="margin-top: 30px;">
+    <div id="example1" style="">
+        <h1 style="font-size: 5rem;" id="bestsolution"><b>Best Solutions</b></h1>
+        <p style="font-size: 18px;padding-top: 20px;" id="pre1"> There are many variations of passages of Lorem Ipsum
+            available, <br>
+            but the marity have suffered alteration in some form,<br>
+            by injected humour, or randomisedwords which don't look even slightly<br>
+            believable.</p>
+        <button id="learnmore" class="button button6 ">LEARN MORE</button>
+    </div>
+
+
+    <!--            <div class="image">-->
+    <!--                <div class="container">-->
+    <!--                    <div class="row">-->
+    <!--                        <div class="col-lg-8 col-md-10 col-12">-->
+    <!--              <div class="slider-content">                -->
+    <!--                <h1 id="bestsolution" class="centered"  style="color:white;padding-top: 40px;font-size:70px;"><b>Best Solutions</b></h1>-->
+    <!--                <p id="pre1" style="direction: ltr;font-size: 20px;color:white;" class="containeer">-->
+    <!--                    There are many variations of passages of Lorem Ipsum available, <br>-->
+    <!--                    but the marity have suffered alteration in some form,<br>-->
+    <!--                    by injected humour, or randomisedwords which don't look even slightly<br>-->
+    <!--                    believable.-->
+    <!--                    </p>-->
+    <!--                    <button id="learnmore" class="button button6 ">LEARN MORE</button>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+
+
+    <div class="row-second">
+        <div class="column-second" style="background-color:white;display: inline-block;">
+            <h1 id="column1" style="font-size: 50px; height: fit-content;color:#232324;direction: ltr;"><b>We are
+                creative agency from Uk</b></h1>
+            <div class="agency-heading"></div>
+            <p id="preg" style="direction: ltr;margin-top: 40px;color:#818181;">Mauris a ante quis enim rhoncus mattis
+                quis et nunc. Maecenas auctor tellus sit amet. Fusce a augue lorem. Morbi ut orci nec odio placerat
+                viverra</p>
+            &nbsp;
+            <p id="preg" style="direction: ltr;color:#818181;">Mauris a ante quis enim rhoncus mattis quis et nunc.
+                Maecenas auctor tellus sit amet. Fusce a augue lorem. Morbi ut orci nec odio placerat viverra</p>
+
+            <button class="button button5">LEARN MORE</button>
+
+        </div>
+
+        <div class="column-second-one" style="background-color:white;display: inline-block;">
+            <img src="about-image.webp" alt="Snow" style="width: 100%;" class="about-image">
+        </div>
+    </div>
+
+
+    <!--    our services   -->
+
+    <!--    <div style="background-color:whitesmoke;">-->
+    <!--        <h2 id="ourservices"><b>Our Services</b></h2>-->
+    <!--        <div class="heading-our"></div>-->
+    <!--        <p class="overservice-pre1">It is a long established fact that a reader will be distracted by the readable content of a page-->
+    <!--            when looking at its Layout</p>-->
+    <!--        -->
+    <!--        <div class="container-main">-->
+    <!--            <div class="container120">-->
+    <!--                <h6 class="heading-creative" id="creative-design" style="font-size:larger"><b>CREATIVE DESIGN</b></h6>-->
+    <!--                <p class="creative-pre" id="" style="color:white;">Etiam ligula justo, suscipit egestas bibendum ut,-->
+    <!--                    euismod fermentum urna. Fusce eget lectus-->
+    <!--                    at augue facilisis convallis.</p>-->
+
+    <!--                <p id="" class="creative-magic1"><i class="pe-7s-magic-wand" style="color: pink;font-size:60px;"></i>-->
+    <!--                </p>-->
+    <!--                <img src="service-1.webp" alt="Snow" style="width:100%">-->
+    <!--                <button class="btn">READ MORE</button>-->
+
+    <!--            </div>-->
+
+    <!--            <div class="container121">-->
+
+    <!--                <h6 class="mobile-our" id="" style="color: white;font-size:larger"><b>MOBILR APPS</b></h6>-->
+    <!--                <p class="mobile-pre" style="color:white;">-->
+    <!--                    Etiam ligula justo,-->
+    <!--                    suscipit egestas bibendum ut,-->
+    <!--                    euismod fermentum urna. Fusce eget lectus-->
+    <!--                    at augue facilisis convallis.-->
+    <!--                </p>-->
+    <!--                <p id="" class="mobile-magic">-->
+    <!--                    <i class=" pe-7s-phone" style="color: pink;font-size:60px;"></i>-->
+    <!--                </p>-->
+
+    <!--                <img src="service-2.webp" alt="Snow" style="width:100%">-->
+    <!--                <button class="btn">READ MORE</button>-->
+
+    <!--            </div>-->
+
+    <!--            <div class="container122">-->
+    <!--                <h6 id="" class="branding-heading" style="color:white;font-size: larger;"><b>BRANDING DESIGN</b></h6>-->
+    <!--                <p class="branding-pre">-->
+    <!--                    Etiam ligula justo, suscipit egestas bibendum ut, euismod fermentum urna.-->
+    <!--                    Fusce eget lectus at augue facilisis convallis.-->
+    <!--                </p>-->
+    <!--                <p id="" class="branding-magic">-->
+    <!--                    <i class="pe-7s-safe" style="color:pink;font-size: 60px;"></i>-->
+    <!--                </p>-->
+
+    <!--                <img src="service-3.webp" alt="Snow" style="width:100%">-->
+    <!--                <button class="btn">READ MORE</button>-->
+
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--    </div>-->
+
+    <div class="row-thord">
+        <div class="column-thord-one"
+             style="background-color:rgb(250, 250, 250);width: 100%;height: 750px;padding: 10px;">
+            <h2 id="ourservices"><b>Our Services</b></h2>
+            <div class="heading-our"></div>
+            <p class="service-pre1">It is a long established fact that a reader will be distracted by the readable
+                content of a page when looking at its</p>
+            <p class="service-pre-2">layout</p>
+
+            <div class="container">
+                <div class="ourservice">
+                    <div class="gallery-ourservice">
+                        <a target="_blank" href="#">
+                            <img src="service-1.webp" alt="Cinque Terre" width="700" height="400"
+                                 style="filter: brightness(50%);">
+                        </a>
+
+                        <h6 id="creative" style="color: white;font-size:larger"><b>CREATIVE DESIGN</b></h6>
+                        <p id="containpre" style="color:white;">Etiam ligula justo, suscipit egestas bibendum ut,
+                            euismod fermentum urna. Fusce eget lectus
+                            at augue facilisis convallis.</p>
+
+                        <p id="vvv"><i class="pe-7s-magic-wand" style="color: pink;font-size:60px;"></i></p>
+                        <button id="readmore1" class="button button7"><b>READ MORE</b></button>
+
+                    </div>
+                </div>
+
+
+                <div class="ourservice">
+                    <div class="gallery-ourservice">
+                        <a target="_blank" href="#">
+                            <img src="service-2.webp" alt="Cinque Terre" width="700" height="400"
+                                 style="filter: brightness(50%);">
+                        </a>
+                        <h6 id="mobilrapps" style="color: white;font-size:larger"><b>MOBILR APPS</b></h6>
+                        <p class="service-pre" style="color:white;">
+                            Etiam ligula justo,
+                            suscipit egestas bibendum ut,
+                            euismod fermentum urna. Fusce eget lectus
+                            at augue facilisis convallis.
+                        </p>
+                        <p id="phone">
+                            <i class=" pe-7s-phone" style="color: pink;font-size:60px;"></i>
+                        </p>
+                        <button ID="readmore2" class="button button8"><b>READ MORE</b></button>
+                    </div>
+                </div>
+
+                <div class="ourservice">
+                    <div class="gallery-ourservice">
+                        <a target="_blank" href="#">
+                            <img src="service-3.webp" alt="Cinque Terre" width="700" height="400"
+                                 style="filter: brightness(50%);">
+                        </a>
+                        <h6 id="branding" style="color:white;font-size: larger;"><b>BRANDING DESIGN</b></h6>
+                        <p class="service3-pre">
+                            Etiam ligula justo, suscipit egestas bibendum ut, euismod fermentum urna.
+                            Fusce eget lectus at augue facilisis convallis.
+                        </p>
+                        <p id="safeicon">
+                            <i class="pe-7s-safe" style="color:pink;font-size: 60px;"></i>
+                        </p>
+                        <button ID="readmore3" class="button button9"><b>READ MORE</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- start second -->
+
+    <!-- end second -->
+
+    <div class="container">
+        <div class="row-for-one">
+            <div class="column-for-two">
+                <h2 id="column2" class="columns1"><b>Ultimate Template</b></h2>
+                <div class="ultimate-heading"></div>
+                <p id="preg1" class="preg1">In a mattis orci, sed suscipit sem. Quisque id leo nisi. Nullam ultrices
+                    eros facilisis iaculis commodo.
+                    Morbi tristique quam in ipsum vulputate, at tempor tortor mollis.</p>
+                <ul id="preg2">
+                    <li style="list-style: none;"><i class="fa fa-pencil"></i>&nbsp;
+                        Amazing Communication experience.
+                    </li>
+                    <li style="color: grey;list-style: none;"><i class="fa fa-pencil"></i>&nbsp;
+                        Best designing experience with trending tools and sizes.
+                    </li>
+                    <li style="list-style: none;"><i class="fa fa-pencil"></i>&nbsp;
+                        Training and communication method remotely.
+                    </li>
+                    <li style="list-style: none;"><i class="fa fa-pencil"></i>&nbsp;
+                        24/7 Hour online supports.
+                    </li>
+                </ul>
+                <br>
+
+                <button class="button button10"><b>LEAT'S TALK</b></button>
+
+            </div>
+            <div class="column-for-three">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- start five contain -->
+
+
+    <div class="row-five-one">
+        <div class="column-five-one" style="background-color:rgb(250, 250, 250);width: 100%;height: auto;">
+            <h2 id="featured"><b> Featured Works </b></h2>
+            <div class="featured-heading"></div>
+            <p class="featured-pre">It is a long established fact that a reader will be distracted by the readable
+                content of a page when looking at its layout</p>
+            <!--    <p  class="featured-pre-second">layout</p>-->
+
+
+            <div style="padding-bottom: 10px;text-align: center;padding-top: 20px;">
+                <a class="contanin3test" href="default.asp" target="_blank"
+                   style="font-size: 20px; color: blue;">All</a>
+                <a class="contanin3test" href="default.asp" target="_blank" style="font-size: 20px;">Design</a>
+                <a class="contanin3test" href="default.asp" target="_blank" style="font-size: 20px;">Illustrator</a>
+                <a class="contanin3test" href="default.asp" target="_blank" style="font-size: 20px;">Mobile Apps</a>
+                <a class="contanin3test" href="default.asp" target="_blank" style="font-size: 20px;">web Design</a>
+                <a class="contanin3test" href="default.asp" target="_blank" style="font-size: 20px;">Degital Art</a>
+
+            </div>
+
+            <div class="responsive-images">
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="agency-01.webp" alt="Cinque Terre" width="600" height="400">
+                        </a>
+                        <!-- <div class="desc">Add a description of the image here</div> -->
+                    </div>
+                </div>
+
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="agency-02.webp" alt="Forest" width="600" height="400">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="agency-03.webp" alt="Northern Lights" width="600" height="400">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="agency-04.webp" alt="Mountains" width="600" height="400">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="agency-05.webp" alt="Cinque Terre" width="600" height="400">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="agency-06.webp" alt="Forest" width="600" height="400">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="agency-07.webp" alt="Northern Lights" width="600" height="400">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="agency-08.webp" alt="Mountains" width="600" height="400">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <button id="loadproduct" class="button button11" style="font-weight: 700;font-size: 11px;"><b>LOAD MORE
+                    PRODUCTS</b></button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- end five contain -->
+    <!-- Testimonial Slider Start -->
+    <div class="columns-six-two">
+            <span><i class="fa fa-quote-right"
+                     style="font-size:xx-large;color: #6b56e2; margin-top: 5%;font-size: 40px;"></i></span>
+        <p style="font-family:'Playfair Display';font-style: italic;font-size: 30px;color:#232324;">"Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut dolore"</p>
+    </div>
+
+    <div class="slider">
+        <div class="slide slide--1">
+            <div class="testimonial">
+
+                <address class="testimonial__author2" style="display: inline-block;">
+                    <img src="testimonial-1.webp" alt="" class="testimonial__photo" style="display: inline;"/>
+                    <div style="display: inline;display: inline-block;justify-content: center;">
+                        <p class="testimonial__location" style="">Adelaide Andrews</p>
+                        <h6 class="testimonial__name" style="">CEO BootXh5erts</h6>
+
+                    </div>
+                </address>
+
+                <address class="testimonial__author3" style="display: inline-block;opacity: .4;">
+                    <img src="testimonial-2.webp" alt="" class="testimonial__photo" style="display: inline;"/>
+                    <div style="display: inline;display: inline-block;justify-content: center;">
+                        <h6 class="testimonial__name" style="">Adelaide Andrews</h6>
+                        <p class="testimonial__location" style="">Founder BootXperts</p>
+                    </div>
+                </address>
+
+                <address class="testimonial__author4" style="display: inline-block;opacity: .4;">
+                    <img src="testimonial-3.webp" alt="" class="testimonial__photo" style="display: inline;"/>
+                    <div style="display: inline;display: inline-block;justify-content: center;">
+                        <h6 class="testimonial__name" style="">Adelaide Andrews</h6>
+                        <p class="testimonial__location" style="">Co Founder BootXperts</p>
+                    </div>
+                </address>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--    <div class="row-six-one">-->
+
+    <!--        <div class="columns-six-two">-->
+    <!--            <span><i class="fa fa-quote-right"-->
+    <!--                     style="font-size:xx-large;color: #6b56e2; margin-top: 5%;font-size: 40px;"></i></span>-->
+    <!--            <p style="font-family:'Playfair Display';font-style: italic;font-size: 30px;color:#232324;">"Lorem ipsum-->
+    <!--                dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut dolore"</p>-->
+    <!--        </div>-->
+
+    <!--        <div class="row-photos" style=" justify-content: center;">-->
+    <!--            <div id="column-photos-1">-->
+    <!--                <div class="column-photos" style="background-color:white;">-->
+    <!--                    <img src="testimonial-1.webp" alt="" style="display: inline-block;">-->
+    <!--                </div>-->
+    <!--                <div class="column-photos2" style="background-color:white;">-->
+    <!--                    <span style="font-size: 14px;font-style: italic;">Adelaide Andrews</span>-->
+    <!--                    <p style="font-size: 14px;padding-top: 10px;">CEO BootXh5erts</p>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+    <!--            <div id="photos2">-->
+    <!--                <div id="" class="column-photos" style="background-color:white;">-->
+    <!--                    <img id="" src="testimonial-2.webp" alt="" style="display: inline-block;">-->
+    <!--                </div>-->
+    <!--                <div class="column-photos2" style="background-color:white;">-->
+    <!--                    <span style="font-size: 14px;">Adelaide Andrews</span>-->
+    <!--                    <p style="font-size: 14px;padding-top: 10px;">Founder BootXperts</p>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+
+    <!--            <div id="photos30">-->
+    <!--                <div id="" class="column-photos" style="background-color:white;">-->
+    <!--                    <img id="" src="testimonial-3.webp" alt="" style="display: inline-block;">-->
+    <!--                </div>-->
+    <!--                <div class="column-photos2" style="background-color:white;">-->
+    <!--                    <span style="font-size: 14px;">Adelaide Andrews</span>-->
+    <!--                    <p style="font-size: 14px;padding-top: 10px;">Co Founder BootXperts</p>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+
+    <!--        </div>-->
+
+    <!--    </div>-->
+
+    <!-- end Testimonial Slider -->
+
+
+    <!--start blog area  -->
+
+    <div class="row-blog-one">
+        <div class="column-blog-one" style="background-color:rgb(250, 250, 250);">
+            <h2 id="ourjour" style="text-align: center;">Our Journal</h2>
+            <div class="ourjour-heading"></div>
+            <p id="blogone" style="margin-top: 30px;"> It is a long established fact that a reader will be distracted by
+                the readable<br> content of a page when looking at its layout</p>
+        </div>
+        <div class="blog-second" style="padding-top: 40px;background-color:rgb(250, 250, 250);">
+            <div class="column-blog-two" style="height: auto;">
+                <!-- <h2>Column 1</h2> -->
+                <img src="blog_02.webp" alt="snow" width="600" height="400" style="height:auto;display: inline;">
+                <div>
+                    <h3 style="padding-top: 20px;font-weight: 600;font-size: 20px;" id="smper">SED ID ACCUMSAN EX IN
+                        SEMPER</h3>
+
+
+                    <div class="row01">
+                        <div class="column01" style="">
+                            <a href="#"
+                               style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;">23 Sep,
+                                2017 <i style="font-size: xx-large;">.</i></a>
+                            <a href="#"
+                               style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;"> Leah
+                                Graves <i style="font-size: xx-large;">.</i></a>
+                            <a href="#"
+                               style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;">Multimedia,
+                                Tour<i style="font-size: xx-large;">.</i></a>
+                        </div>
+                        <div class="column02">
+                            <span class="comment">
+                                <a href="#" style="text-decoration: none;display: inline-block;">
+                                    <i class="fa fa-comment" style="color: #92b0c0;text-align: right;"></i>
+                                        <i style="color:#adabab;">0</i><i
+                                        style="font-size: xx-large;color:#adabab;">.</i>
+                                </a>
+                            </span>
+
+                            <span clas="like">
+                               <a href="#" style="text-decoration: none;display: inline-block;">
+                                   <i class="fa fa-heart" style="color:red;text-align: right;"></i>
+                                        <i style="color:#adabab;">1</i><i style="font-size: x-large;color:#adabab">.</i>
+                               </a>
+                            </span>
+
+                        </div>
+                    </div>
+
+
+                    <!--                    <div class="blog__meta">-->
+                    <!--                <div class="blog__meta&#45;&#45;left" style="display: inline-block;padding-top: 10px;">-->
+                    <!--                    <a href="#" style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;">23 Sep,-->
+                    <!--                        2017 <i style="font-size: xx-large;">.</i></a>-->
+                    <!--                    <a href="#" style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;"> Leah-->
+                    <!--                        Graves <i style="font-size: xx-large;">.</i></a>-->
+                    <!--                    <a href="#" style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;">Multimedia,-->
+                    <!--                        Tour<i style="font-size: xx-large;">.</i></a>-->
+                    <!--                </div>-->
+
+                    <!--                <div class="blog__meta&#45;&#45;right" style="text-align:right;display: inline-block;margin-left: 5%;">-->
+                    <!--                        <span class="comment">-->
+                    <!--                            <a href="#" style="text-decoration: none;display: inline-block;">-->
+                    <!--                                <i class="fa fa-comment" style="color: #92b0c0;text-align: right;"></i>-->
+                    <!--                                    <i style="color:#adabab;">0</i><i style="font-size: xx-large;color:#adabab;">.</i>-->
+                    <!--                            </a>-->
+                    <!--                        </span>-->
+                    <!--                        <span clas="like">-->
+                    <!--                            <a href="#" style="text-decoration: none;display: inline-block;">-->
+                    <!--                                <i class="fa fa-heart" style="color:red;text-align: right;"></i>-->
+                    <!--                                    <i style="color:#adabab;">1</i><i style="font-size: x-large;color:#adabab">.</i>-->
+                    <!--                            </a>-->
+                    <!--                        </span>-->
+                    <!--                </div>-->
+                    <!--                </div>-->
+
+                    <div style="padding-top: 10px;">
+                        <p style="color:#aaa;">
+                            Nullam varius porttitor augue id rutrum. Duis vehicula magna at<br> magna tempus rhoncus.
+                            Maecenas quis…
+                        </p>
+                    </div>
+
+                    <div class="row011">
+                        <div class="column011" style="">
+                            <button id="readmore"
+                                    style="min-width:180px;font-weight: 700;font-size: 12px;display: inline-block;margin-top: 3%;"
+                                    class="button button12"><b>READ MORE</b></button>
+                        </div>
+                        <div class="column012">
+                            <i class="fa fa-share-alt" id="sharealt"
+                               style="background-color: #ced0d7;color: white;width: 35px;height: 30px;text-align: center;padding-top: 6px;display: inline-block;"></i>
+
+                        </div>
+                    </div>
+                    <!--                    <div class="buttonredmore" style="padding-top: 10px;">-->
+                    <!--                        <button id="readmore"-->
+                    <!--                                style="min-width:180px;font-weight: 700;font-size: 12px;display: inline-block;margin-top: 3%;"-->
+                    <!--                                class="button button12"><b>READ MORE</b></button>-->
+                    <!--                        <i class="fa fa-share-alt" id="sharealt"-->
+                    <!--                           style="background-color: #ced0d7;color: white;width: 35px;height: 30px;text-align: center;padding-top: 6px;display: inline-block; margin-left: 200px;"></i>-->
+                    <!--                    </div>-->
+
+                </div>
+                <!-- <p>Some text..</p> -->
+            </div>
+            <div class="column-blog-three" style="height: auto;">
+                <!-- <h2>Column 2</h2> -->
+                <img src="blog_01.webp" alt="snow" width="600" height="400" style="height:auto;display: inline;">
+                <!-- <p>Some text..</p> -->
+                <div style="">
+                    <h3 style="padding-top: 20px;font-weight: 600;font-size: 20px;" id="smper">SED ID ACCUMSAN EX IN
+                        SEMPER</h3>
+
+
+                    <div class="row01">
+                        <div class="column01" style="">
+                            <a href="#"
+                               style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;">23 Sep,
+                                2017 <i style="font-size: xx-large;">.</i></a>
+                            <a href="#"
+                               style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;"> Leah
+                                Graves <i style="font-size: xx-large;">.</i></a>
+                            <a href="#"
+                               style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;">Multimedia,
+                                Tour<i style="font-size: xx-large;">.</i></a>
+                        </div>
+                        <div class="column02">
+                            <span class="comment">
+                                <a href="#" style="text-decoration: none;display: inline-block;">
+                                    <i class="fa fa-comment" style="color: #92b0c0;text-align: right;"></i>
+                                        <i style="color:#adabab;">0</i><i
+                                        style="font-size: xx-large;color:#adabab;">.</i>
+                                </a>
+                            </span>
+
+                            <span clas="like">
+                               <a href="#" style="text-decoration: none;display: inline-block;">
+                                   <i class="fa fa-heart" style="color:red;text-align: right;"></i>
+                                        <i style="color:#adabab;">1</i><i style="font-size: x-large;color:#adabab">.</i>
+                               </a>
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 10px;">
+                        <p style="color:#aaa;">
+                            Nullam varius porttitor augue id rutrum. Duis vehicula magna at<br> magna tempus rhoncus.
+                            Maecenas quis…
+                        </p>
+                    </div>
+
+                    <!--                    test share button-->
+
+                    <div class="row011">
+                        <div class="column011" style="">
+                            <button id="readmore"
+                                    style="min-width:180px;font-weight: 700;font-size: 12px;display: inline-block;margin-top: 3%;"
+                                    class="button button12"><b>READ MORE</b></button>
+                        </div>
+                        <div class="column012">
+                            <i class="fa fa-share-alt" id="sharealt"
+                               style="background-color: #ced0d7;color: white;width: 35px;height: 30px;text-align: center;padding-top: 6px;display: inline-block;"></i>
+
+                        </div>
+                    </div>
+
+
+                    <!--                    end code-->
+
+                    <!--                    <div class="buttonredmore" style="padding-top: 10px;">-->
+                    <!--                        <button id="readmore"-->
+                    <!--                                style="min-width:180px;font-weight: 700;font-size: 12px;display: inline-block;margin-top: 3%;"-->
+                    <!--                                class="button button12"><b>READ MORE</b></button>-->
+                    <!--                        <i class="fa fa-share-alt" id="sharealt"-->
+                    <!--                           style="background-color: #ced0d7;color: white;width: 35px;height: 30px;text-align: center;padding-top: 6px;display: inline-block; margin-left: 200px;"></i>-->
+                    <!--                    </div>-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- end Blog area -->
+
+    <!-- <div class="row">
+      <div class="column" id="headersecond"  style="width: 100%;height: 350px;margin-top: 40px;">
+        <h3 id="keepintouch" style="font-size: x-large;margin-top: 100px;margin-left: 5%;"><b>Keep In Touch</b></h3>
+
+
+        <p style="text-align:left;color:white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;margin-left:20%;padding-top: 20px; display: inline-block;margin-top: 10px;font-size:medium;">Lorem ipsum dolor sit amet, consectetur adipiscing elitphasellus accumsan orci</p>
+        <button id="CONTACTUS" class="button button13" style="padding-left:20px;padding-right:20px;display: inline-block;margin-left: 300px;min-width:180px;line-height: 28px;font-weight: 700;font-size: 12px;"><b>contact us</b></button>
+
+      </div>
+    </div> -->
+
+    <!-- Call To Action Area Start -->
+
+
+    <div class="row-action-area">
+        <div class="column-action-area-test" id="headersecond-test">
+
+            <div class="column-action-area-one-test" style="">
+                <h3 id="keepintouch-test" style="font-size: 28px;"><b>Keep In Touch</b></h3>
+                <div class="keep-heading"></div>
+                <p id="actionarea-test" style="padding-top: 45px;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elitphasellus accumsan orci</p>
+            </div>
+            <div class="keepline">
+
+            </div>
+            <div class="column-action-area-two-test" style="">
+
+                <button id="CONTACTUS" class="button button133"><b>contact us</b></button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--          <div class="row-action">-->
+    <!--              <div class="column-action-one" >-->
+    <!--                  <h3 id="keep"><b>Keep In Touch</b></h3>-->
+    <!--                  <p  id="keep-preg">Lorem ipsum dolor sit amet, consectetur adipiscing elitphasellus accumsan orci</p>-->
+    <!--              </div>-->
+    <!--              <div class="column-action-one">-->
+    <!--                  <button id="CONTACTUS" class="button button13"><b>contact us</b></button>-->
+    <!--              </div>-->
+    <!--          </div>-->
+
+
+    <!-- Call To Action Area End -->
+
+    <!-- footer start -->
+    <!-- <div style="background-color:aliceblue;">
+    <h2 style="text-align: center;">Our Services</h2>
+    <p style="text-align: center;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at itslayout</p>
+
+
+    <div class="row-test-img">
+      <div class="column-test-img ">
+        <img src="service-1.webp" alt="Snow" style="width:100%">
+        <h6 id="creative-test"><b>CREATIVE DESIGN</b></h6>
+        <p id="containpre-test" style="">Etiam ligula justo, suscipit egestas bibendum ut,
+          euismod fermentum urna. Fusce eget lectus
+          at augue facilisis convallis.</p>
+      </div>
+      <div class="column-test-img ">
+        <img src="service-2.webp" alt="Forest" style="width:100%">
+      </div>
+      <div class="column-test-img ">
+        <img src="service-3.webp" alt="Mountains" style="width:100%">
+      </div>
+    </div>
+    </div> -->
+
+
+    <footer>
+        <div class="row primary"
+             style="background-color: #2f2f30;color: white;padding-top: 30px;padding-left: 10px;padding-right: 10px;">
+            <div class="column about">
+
+                <h3>PISCES BUSINESS</h3>
+                &nbsp;
+                <p style="color:#adabab;">
+                    Nunc ut vehicula ante. Donec cursus felis diam, at vulputate ligula sollicitudin at. Vivamus massa
+                    lorem
+                </p>
+                <div class="logobox" style="padding-top: 20px;">
+                    <a href="#" class="fa fa-facebook"
+                       style="color: #818181;font-size: medium;text-decoration: none;"></a> &nbsp;
+                    <a href="#" class="fa fa-twitter"
+                       style="color: #818181; font-size: medium;text-decoration: none;"></a> &nbsp;
+                    <a href="#" class="fa fa-pinterest-p"
+                       style="color: #818181; font-size: medium;text-decoration: none;"></a> &nbsp;
+                    <a href="#" class="fa fa-linkedin"
+                       style="color: #818181; font-size: medium;text-decoration: none;"></a> &nbsp;
+                    <a href="#" class="fa fa-vimeo-square"
+                       style="color: #818181;font-size: medium;text-decoration: none;"></a> &nbsp;
+                </div>
+            </div>
+
+            <div class="column links">
+                <h3>CONTACT INFO</h3>
+                &nbsp;
+                <ul>
+
+                    <li style="list-style: none;">
+                        <a href="#" class="fa fa-phone" style="color:#adabab;text-decoration: none;">&nbsp; (+61 2)
+                            9251 5600</a>
+                    </li>
+                    &nbsp;
+                    <li style="list-style: none;">
+                        <a href="#" class="fa fa-envelope" style="color:#adabab;text-decoration: none;">&nbsp;
+                            info@example.com</a>
+                    </li>
+                    &nbsp;
+                    <li style="list-style: none;">
+                        <a href="#faq" class="fa fa-map-marker" style="color:#adabab;text-decoration: none;">&nbsp; PO
+                            Box 16122 Collins Street West Victoria 8007 Australia</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!--  <div class="grid-container">-->
+            <!--          <div>1</div>-->
+            <!--          <div>2</div>-->
+            <!--          <div>1</div>-->
+            <!--          <div>2</div>-->
+            <!--  </div>-->
+
+            <div class="column links">
+                <h3>USEFUL LINK</h3> &nbsp;
+
+                <div class="row">
+                    <div class="column1" style="">
+                        <div style="color:#adabab;">Home</div>
+                        <div style="color:#adabab;">Ads Services</div>
+                        <div style="color:#adabab;">Elements</div>
+                        <div style="color:#adabab;">Contact</div>
+                    </div>
+                    <div class="column1" style="display: inline-block;">
+                        <div style="color:#adabab;">Privacy Policy</div>
+                        <div style="color:#adabab;">Cookies</div>
+                        <div style="color:#adabab;">Blog</div>
+                    </div>
+                </div>
+
+                <!--    <h3>USEFUL LINK</h3>  &nbsp;-->
+                <!--      <div>Home</div>-->
+                <!--      <div>Ads Services</div>-->
+                <!--      <div>Elements</div>-->
+                <!--      <div>Contact</div>-->
+                <!--      <div>Privacy Policy</div>-->
+                <!--      <div>Cookies</div>-->
+                <!--      <div>Blog</div>-->
+
+
+                <!--     <ul style="display: inline-block;"> &nbsp;-->
+                <!--      <li style="list-style: none;">-->
+                <!--       <a href="#Home" style="color:#adabab;text-decoration: none;">Home</a>-->
+                <!--      </li>  &nbsp;-->
+                <!--      <li style="list-style: none;">-->
+                <!--       <a href="#Services" style="color:#adabab;text-decoration: none;">Ads Services</a>-->
+                <!--      </li>  &nbsp;-->
+                <!--      <li style="list-style: none;">-->
+                <!--      <a href="#Elements" style="color:#adabab;text-decoration: none;">Elements</a>-->
+                <!--      </li>  &nbsp;-->
+                <!--      <li style="list-style: none;">-->
+                <!--      <a href="#Contact" style="color:#adabab;text-decoration: none;">Contact</a>-->
+                <!--      </li>-->
+                <!--    </ul>-->
+                <!--    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-->
+                <!--    <ul  style="display: inline-block;">-->
+                <!--      <li style="list-style: none;">-->
+                <!--       <a href="#Home" style="color:#adabab;text-decoration: none;">Privacy Policy</a>-->
+                <!--      </li>  &nbsp;-->
+                <!--      <li style="list-style: none;">-->
+                <!--       <a href="#Services" style="color:#adabab;text-decoration: none;">Cookies</a>-->
+                <!--      </li>  &nbsp;-->
+                <!--      <li style="list-style: none;">-->
+                <!--      <a href="#Elements" style="color:#adabab;text-decoration: none;">Blog</a>-->
+                <!--      </li>  &nbsp;-->
+
+                <!--    </ul>-->
+
+            </div>
+
+            <div class="column subscribe">
+                <h3>SUBSCRIBE NEWSLETTER</h3>&nbsp;
+                <div>
+                    <input type="email" class="email" placeholder="Email for newslatter" size="43"
+                           style="padding-top: 5px;padding-bottom: 5px;padding-left: 15px;padding-right: 15px;font-family:inherit;font-size: inherit;"><br><br>
+                    <button id="subscribe" class="button button14"> Subscribe</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row copyright"
+             style="background-color: #161616;color: white;padding-top: 20px; padding-bottom: 20px;">
+
+            <p style="text-align: center;">© Pisces 2021 Made With <i class="fa fa-heart"></i> by HasThemes</p>
+        </div>
+    </footer>
+
+    <!-- end footer -->
+
+
+</div>
+
+
+<!--<div class="clear">-->
+<!--    <div id="col1">-->
+<!--        <a href="#"-->
+<!--           style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;">23 Sep,-->
+<!--            2017 <i style="font-size: xx-large;">.</i></a>-->
+<!--        <a href="#"-->
+<!--           style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;"> Leah-->
+<!--            Graves <i style="font-size: xx-large;">.</i></a>-->
+<!--        <a href="#"-->
+<!--           style="color: #aaa;font-size: 15px;text-decoration: none;display: inline-block;">Multimedia,-->
+<!--            Tour<i style="font-size: xx-large;">.</i></a>-->
+
+<!--    </div>-->
+<!--    <div id="col2">-->
+<!--        <span class="comment">-->
+<!--                            <a href="#" style="text-decoration: none;display: inline-block;">-->
+<!--                                <i class="fa fa-comment" style="color: #92b0c0;text-align: right;"></i>-->
+<!--                                    <i style="color:#adabab;">0</i><i style="font-size: xx-large;color:#adabab;">.</i>-->
+<!--                            </a>-->
+<!--                        </span>-->
+<!--        <span clas="like">-->
+<!--                            <a href="#" style="text-decoration: none;display: inline-block;">-->
+<!--                                <i class="fa fa-heart" style="color:red;text-align: right;"></i>-->
+<!--                                    <i style="color:#adabab;">1</i><i style="font-size: x-large;color:#adabab">.</i>-->
+<!--                            </a>-->
+<!--                        </span>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!-- <script>
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+      x.className = "topnav";
+  }
+}
+</script> -->
+</body>
+</html>
